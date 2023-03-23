@@ -477,7 +477,6 @@ body {
 
 .footer-text-title {
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.5;
     color: #FFFFFF;
 
@@ -522,7 +521,6 @@ body {
 
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.5;
     align-items: center;
     text-align: center;
@@ -549,15 +547,11 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em;
     color: var(--background-dark);
 }
 
 .portfolio-pg-text {
-    font-weight: 400;
-    font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
     color: var(--color-text-main);
 }
 
@@ -622,7 +616,6 @@ body {
     transform: translate(0, 100%);
     transition: transform var(--transition-dur-time);
 
-    font-weight: 400;
     line-height: 1.5;
     padding-top: 40px;
     padding-right: 32px;
@@ -642,3 +635,48 @@ img {
     height: auto;
 } 
 /* ============================== /PORTFOLIO PAGE ======================= */
+
+/* ===============================MODAL WINDOW =========================== */
+/* .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: rgba(46, 47, 66, 0.4);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 408px;
+    height: 576px;
+    background: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.modal-close-btn {
+
+}
+
+.modal-close-btn-icon {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+    background: var(--accent-lines);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+} */
+/* ===============================/MODAL WINDOW =========================== */
