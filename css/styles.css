@@ -611,7 +611,6 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
     height: 100%;
     transform: translate(0, 100%);
     transition: transform var(--transition-dur-time);
@@ -637,7 +636,7 @@ img {
 /* ============================== /PORTFOLIO PAGE ======================= */
 
 /* ===============================MODAL WINDOW =========================== */
-/* .backdrop {
+.backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -645,6 +644,13 @@ img {
     height: 100%;
     z-index: 100;
     background: rgba(46, 47, 66, 0.4);
+    transition: opacity var(--transition-dur-time), visibility var(--transition-dur-time);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .modal {
@@ -661,10 +667,6 @@ img {
 }
 
 .modal-close-btn {
-
-}
-
-.modal-close-btn-icon {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -675,8 +677,25 @@ img {
     width: 24px;
     height: 24px;
     padding: 8px;
-    background: var(--accent-lines);
+    background: var(--accent-lines); 
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-} */
+    transition: border-color var(--transition-dur-time), background-color var(--transition-dur-time);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+}
+
+.modal-close-btn-icon {
+    fill: var(--background-dark);
+    transition: fill var(--accent-color);
+}
+
+.modal-close-btn:hover .modal-close-btn-icon,
+.modal-close-btn:focus .modal-close-btn-icon {
+    fill: #FFFFFF;
+}
 /* ===============================/MODAL WINDOW =========================== */
