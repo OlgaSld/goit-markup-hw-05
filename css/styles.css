@@ -520,9 +520,9 @@ body {
     padding: 12px 24px;
 
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--brand-color);
@@ -605,6 +605,7 @@ body {
 .portfolio-photo-wrapper {
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .overlay {
@@ -619,7 +620,6 @@ body {
     padding-top: 40px;
     padding-right: 32px;
     padding-left: 32px;
-    padding-bottom: 164px;
     color: var(--backround-light);
     background-color: var(--brand-color);
 }
@@ -642,7 +642,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 100;
+    opacity: 1;
     background: rgba(46, 47, 66, 0.4);
     transition: opacity var(--transition-dur-time), visibility var(--transition-dur-time);
 }
